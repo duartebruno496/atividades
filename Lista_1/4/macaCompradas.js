@@ -11,8 +11,8 @@ var y = 0.25
 
 if (n <= 11 ){
     
-    console.log("O valor das maçãs é: ", n += x );
+    console.log("O valor das maçãs é: ", n *= x );
 }else{
     
-    console.log("O valor das maçãs é: ", n += y);
+    console.log("O valor das maçãs é: ", n *= y);
 }
