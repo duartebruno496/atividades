@@ -13,3 +13,5 @@ var notaFinal = [];
 if(nota1 + nota2 + nota3){
     console.log('Sua nota final é: ', notaFinal)
 }
+
+//revisar o código
