@@ -2,6 +2,8 @@
 //BIP BIP  
 //BIP BIP 
 
+//programa ok 
+
 var rs = require('readline-sync');
 var n = rs.questionInt('Digite um numero: ')
 var compara = 0;
@@ -10,11 +12,10 @@ while (n > compara){
     
     console.log('bip bip');
     compara++;
-    
+
+  
+        
 }
-
-
-
 
 
 
