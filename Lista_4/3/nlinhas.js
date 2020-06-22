@@ -3,3 +3,5 @@
 // *  * *  * * *  * * * *  * * * * * 
  
 // Onde N é um número maior que zero determinado pelo usuário (no exemplo, N=5). 
+
+// refazer código

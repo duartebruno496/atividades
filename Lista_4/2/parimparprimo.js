@@ -2,7 +2,17 @@
  
 // EX.:  1 ÍMPAR PRIMO 2 PAR PRIMO 3 ÍMPAR PRIMO 4 PAR 5 ÍMPAR PRIMO 6 PAR 7 ÍMPAR PRIMO 8 PAR 9 ÍMPAR 10 PAR  
 
+var num = 0 
 
-
-var i = 1;
-var n = 50; 
+ while(num <= 50){ //começando o contador enquanto ele for menor que 50 continua rodando
+     if((num % 2 == 0) && (num % 1 == 0 && num % num == 0)){ //verifica se numero é par e primo 
+     console.log("PAR PRIMO") 
+    }else if(num % 2 == 0){ //verifica se numero é par, resto igual a zero 
+        console.log("PAR")
+    }else if((num % 2 != 0) && (num % 1 == 0 && num % num == 0)){ //verifica se numero é impar e primo se diferente de zero e não primo então numero é apenas impar 
+        console.log("ÍMPAR PRIMO")
+    }else{ 
+        console.log("ÍMPAR")
+    }
+        num ++
+}

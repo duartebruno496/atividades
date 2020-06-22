@@ -10,22 +10,54 @@
 
 var rs = require("readline-sync")
 
-var primeironumero = rs.questionInt("Digite o primeiro número entre 1 e 100: ");
-var segundonumero = rs.questionInt('Digite o segundo número entre 1 e 100: ');
-var soma = primeironumero + segundonumero; 
-// var primeironumero;
-// var segundonumero;
-// primeironumero = rs.questionInt("Digite o primeiro número entre 1 e 100: ");
-// segundonumero = rs.questionInt('Digite o segundo número entre 1 e 100: ');
+var n1 = rs.questionInt("Insira um número entre 1 e 100 : ")
+var n2 = rs.questionInt("Insira outro número entre 1 e 100 : ")
 
-// let primeironumero = rs.questionInt("Digite o primeiro número entre 1 e 100: ");
-// let segundonumero = rs.questionInt('Digite o segundo número entre 1 e 100: ');
+if (n1 <= n2) { //Comparando quando o n2 maior que o n1
 
-for (soma < 100; soma++;){
-    // primeironumero = rs.questionInt("Digite o primeiro número entre 1 e 100: ");
-    // segundonumero = rs.questionInt('Digite o segundo número entre 1 e 100: ');
-    break
+    while (n1 <= n2) {  //Laço para repetição do ping pong 
+        if(n1 % 7 == 0 && n1 % 5 == 0){ // se divisivel por 5 e 7 imprime ping pong 
+            console.log ("Ping Pong")
+        }
+        else if (n1 % 7 == 0) { // se divisivel por 7 imprime ping 
+            console.log("Ping")
+        }
+        else if (n1 % 5 == 0) { //se divisivel por 5 imprime pong 
+            console.log("Pong")
+        } else {
+            console.log(n1) //quando numero nao é divisivel por 5 ou 7
+        }
+        n1++ //incrementando para aparecer de um em um 
+    }
 }
+else { //comparação enquanto o n2 for menor que o n1 
+ while (n2 <= n1) {
+    if(n2 % 7 == 0 && n2 % 5 == 0){  // se divisivel por 5 e 7 imprime ping pong 
+        console.log ("Ping Pong")
+    }
+        else if (n2 % 7 == 0) { // se divisivel por 7 imprime ping 
+            console.log("Ping")
+        }
+        else if (n2 % 5 == 0) { //se divisivel por 5 imprime pong 
+            console.log("Pong")
+        } else {
+            console.log(n2) //quando numero nao é divisivel por 5 ou 7
+        }
+        n2++ //incrementando para aparecer de um em um 
+    }
+} 
 
 
-console.log('O número é: ',soma)
+
+
+
+
+
+
+//logica
+//inputar o primeiro número entre 1 e 100
+//inputar o segundo numero entre 1 e 100
+//iterar do menor para o maior numero imprimindo de 1 em 1 
+//caso o numero seja divisivel por 7, irá imprimir a palavra ping 
+//caso o numero seja divisivel por 5, deve imprimir pong 
+//caso seja divisivel por 5 e 7 deve imprimir ping pong 
